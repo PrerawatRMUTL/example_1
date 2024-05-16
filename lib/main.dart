@@ -12,13 +12,16 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
-      theme: ThemeData(
-
-        colorScheme: ColorScheme.fromSeed(seedColor: Color.fromARGB(255, 24, 2, 103)),
-        useMaterial3: true,
-      ),
-      home: const MyHomePage(),
+      title: 'Flutter Demo'
+      body: Center(
+        child: Column(children: [
+          Text("Hello World"),
+        ElevatedButton(
+          onPressed: () {}, 
+          child: Text("ไปหน้าสอง"),
+          )
+        ],),
+      )  
     );
   }
 }

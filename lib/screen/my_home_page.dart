@@ -6,8 +6,20 @@ class MyHomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-     drawer: Drawer(),
-     appBar: AppBar(title: Text("ddddd")),
-    );
+        drawer: Drawer(
+          child: Text("My Drawer"),
+        ),
+        appBar: AppBar(
+          title: Text("My Home Page new"),
+        ),
+        body: Center(
+          child: Text(
+            "Hello World",
+            style: TextStyle(
+              fontSize: 10,
+              color: Color.fromARGB(255, 63, 7, 103),
+            ),
+          ),
+        ));
   }
 }
